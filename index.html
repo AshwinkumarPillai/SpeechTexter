@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SpeechTexter</title>
-    <link rel="stylesheet" href="sptx.css">
-</head>
-<body>
-    <div class="btn__container">
-        <button class="talk">Speak</button>
-        <button class="shutup">Stop</button>
-    </div>
-    <div class="popup">I am inevitable! You cannot stop me!! Mwahahaha!!!</div>
-    <div class="content" contenteditable="true">
-        Hello mortal! Click on speak and allow me to use your microphone. And then speak and I would deliver to you your own words
-        <br>
-        And Yes, I am editable
-        <br>
-        After you press speak then everytime you see the yellowish box popup just speak
-        <br><br><br>
-    </div>
+    <link rel="stylesheet" href="sptx.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SpeechTexter</h1>
+      <p>Transform your speech into text effortlessly!</p>
+    </header>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <main>
+      <div class="card">
+        <div class="btn__container">
+          <button class="talk">Speak</button>
+          <button class="shutup">Stop</button>
+        </div>
+
+        <div class="content" contenteditable="true">
+          Hello mortal! Click on speak and allow me to use your microphone. And then speak and I would deliver
+          to you your own words.
+          <br /><br />
+          And Yes, I am editable.
+          <br /><br />
+          After you press speak, every time you see the yellowish box popup just speak.
+        </div>
+
+        <div class="popup" id="popup">I am inevitable! You cannot stop me!! Mwahahaha!!!</div>
+      </div>
+      <br />
+
+      <div class="card card-2">
+        <h2 class="transcript-header">Transcripts</h2>
+        <div class="transcriptions">
+          <br />
+          <!-- Transcribed text will appear here -->
+        </div>
+      </div>
+    </main>
 
     <script src="recog.js"></script>
-    
-
-</body>
+  </body>
 </html>
